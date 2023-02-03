@@ -11,6 +11,10 @@
 		0B78F8C1298D4A8800836C34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78F8C0298D4A8800836C34 /* ContentView.swift */; };
 		0B78F8C3298D4A8D00836C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B78F8C2298D4A8D00836C34 /* Assets.xcassets */; };
 		0B78F8C6298D4A8D00836C34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B78F8C5298D4A8D00836C34 /* Preview Assets.xcassets */; };
+		0B78F8CD298D4ACF00836C34 /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78F8CC298D4ACF00836C34 /* FruitData.swift */; };
+		0B78F8D1298D4FB900836C34 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78F8D0298D4FB900836C34 /* ListItemView.swift */; };
+		0B78F8D3298D562900836C34 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78F8D2298D562900836C34 /* EditView.swift */; };
+		0B78F8D5298D586C00836C34 /* AddFruitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B78F8D4298D586C00836C34 /* AddFruitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		0B78F8C0298D4A8800836C34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0B78F8C2298D4A8D00836C34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B78F8C5298D4A8D00836C34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0B78F8CC298D4ACF00836C34 /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
+		0B78F8D0298D4FB900836C34 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		0B78F8D2298D562900836C34 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		0B78F8D4298D586C00836C34 /* AddFruitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFruitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				0B78F8BE298D4A8800836C34 /* kai1110_kadai17_SwiftUIApp.swift */,
 				0B78F8C0298D4A8800836C34 /* ContentView.swift */,
+				0B78F8D4298D586C00836C34 /* AddFruitView.swift */,
+				0B78F8D0298D4FB900836C34 /* ListItemView.swift */,
+				0B78F8D2298D562900836C34 /* EditView.swift */,
+				0B78F8CC298D4ACF00836C34 /* FruitData.swift */,
 				0B78F8C2298D4A8D00836C34 /* Assets.xcassets */,
 				0B78F8C4298D4A8D00836C34 /* Preview Content */,
 			);
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B78F8C1298D4A8800836C34 /* ContentView.swift in Sources */,
+				0B78F8D3298D562900836C34 /* EditView.swift in Sources */,
 				0B78F8BF298D4A8800836C34 /* kai1110_kadai17_SwiftUIApp.swift in Sources */,
+				0B78F8D5298D586C00836C34 /* AddFruitView.swift in Sources */,
+				0B78F8CD298D4ACF00836C34 /* FruitData.swift in Sources */,
+				0B78F8D1298D4FB900836C34 /* ListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
