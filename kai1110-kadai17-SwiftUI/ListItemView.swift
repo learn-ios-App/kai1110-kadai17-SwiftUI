@@ -25,9 +25,11 @@ struct ListItemView: View {
             }) {
                 Image(systemName: "i.circle")
             }
+            .buttonStyle(BorderlessButtonStyle())
         }
         .sheet(isPresented: $isEdit) {
             EditView(
+                text: fruit.name,
                 edit: { text in
                     fruit.name = text
                     isEdit = false

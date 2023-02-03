@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct EditView: View {
-    @State private var text = ""
+    @State var text = ""
     let edit: (String) -> Void
     let cancel: () -> Void
     var body: some View {
