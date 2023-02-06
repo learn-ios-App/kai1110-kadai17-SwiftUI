@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject private var fruitData = FruitData()
+    @StateObject private var fruitData = FruitData()
     @State private var isAddView = false
     var body: some View {
         NavigationStack {
