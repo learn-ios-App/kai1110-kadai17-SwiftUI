@@ -18,4 +18,8 @@ class FruitData: ObservableObject {
     func delteteFruit(offsets: IndexSet) {
         self.fruits.remove(atOffsets: offsets)
     }
+    
+    func addFruit(text: String) {
+        fruits.append(FruitModel(name: text, check: true))
+    }
 }

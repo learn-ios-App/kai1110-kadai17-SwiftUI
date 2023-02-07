@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject private var fruitData = FruitData()
+    @StateObject private var fruitData = FruitData()
     @State private var isAddView = false
     var body: some View {
         NavigationStack {
@@ -25,7 +25,7 @@ struct ContentView: View {
         .sheet(isPresented: $isAddView) {
             AddFruitView(
                 save: { text in
-                    fruitData.fruits.append(FruitModel(name: text, check: false))
+                    fruitData.addFruit(text: text)
                     isAddView = false
                 },
                 cancel: {

@@ -36,7 +36,8 @@ struct ListItemView: View {
                 },
                 cancel: {
                     isEdit = false
-                })
+                }
+            )
         }
     }
 }
