@@ -2,34 +2,32 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var fruitData = FruitData()
-    @State private var isAddView = false
+    @StateObject private var fruitViewModel = FruitViewModel()
     var body: some View {
         NavigationStack {
             List {
-                ForEach(fruitData.fruits) { fruit in
+                ForEach(fruitViewModel.fruits) { fruit in
                     ListItemView(fruit: fruit)
                 }
-                .onDelete(perform: fruitData.delteteFruit)
+                .onDelete(perform: fruitViewModel.delteteFruit)
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
-                        isAddView = true
+                        fruitViewModel.didTapPlusButton()
                     }) {
                         Image(systemName: "plus")
                     }
                 }
             }
         }
-        .sheet(isPresented: $isAddView) {
+        .sheet(isPresented: $fruitViewModel.isAddView) {
             AddFruitView(
                 save: { text in
-                    fruitData.addFruit(text: text)
-                    isAddView = false
+                    fruitViewModel.didTapAddViewSaveButton(text: text)
                 },
                 cancel: {
-                    isAddView = false
+                    fruitViewModel.didTapAddViewCancelButton()
                 }
             )
         }
